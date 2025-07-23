@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5DZ39PMH');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .page-container {
+            background-color: #ffffff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            display: flex; /* Always visible for its own page */
+            flex-direction: column;
+            gap: 24px;
+        }
+        .button-primary {
+            background-image: linear-gradient(to right, #6366f1, #3b82f6); /* Blue gradient */
+            color: white;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+            width: auto;
+            display: inline-block;
+        }
+        .button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DZ39PMH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Thank You Page Content -->
+    <div class="page-container">
+        <h1 class="text-4xl font-extrabold text-green-600 mb-6">Thank You!</h1>
+        <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            Your order has been placed successfully. We appreciate your business!
+            You will receive a confirmation email shortly.
+        </p>
+        <button id="back-to-home-button" class="button-primary">Back to Home</button>
+    </div>
+
+    <script>
+        // Get reference to the "Back to Home" button
+        const backToHomeButton = document.getElementById('back-to-home-button');
+
+        // Event listener to navigate back to the home page
+        backToHomeButton.addEventListener('click', () => {
+            window.location.href = 'index.html'; // Navigate back to index.html
+        });
+    </script>
+</body>
+</html>
+
+
